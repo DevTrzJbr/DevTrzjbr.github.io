@@ -1,0 +1,252 @@
+body, html {
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+
+    font-size: 16px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+#journey {
+    padding: 30px 0px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    
+    border: solid 5px #0000EE ;
+    border-radius: 50%;
+    
+    margin: 50px auto;
+    
+    overflow: hidden;
+    
+    margin: 30px auto;
+}
+
+.foto-perfil .foto {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.title-profile h1 {
+    margin: 0px;
+}
+
+.box-skills {
+    margin: 80px auto;
+    
+}
+
+.skill {
+    border: solid #0000EE;
+    border-radius: 20px;
+    color: #7CFC00;
+
+    display: inline-block;
+
+    padding: 5px 10px;
+    margin: 5px 10px;
+
+    font-weight: bold;
+}
+
+.separete {
+    height: 300px;
+}
+
+.separete-item {
+    margin-top: 200px;
+}
+
+.medium-container-block {
+    max-width: 400px;
+    height: auto;
+
+    padding: 10px;
+    margin: 10px 30px;
+
+}
+
+.large-container-block {
+    max-width: 800px;
+    height: auto;
+
+    padding: 10px;
+    margin: 10px auto;
+
+}
+
+.small-container-block {
+    display: inline-block;
+    max-width: 200px;
+    height: auto;
+
+    padding: 10px;
+    margin: 5px 15px;
+}
+
+
+.bc-dark-gray {
+    background-color: #282828;
+}
+
+.br-15 {
+    border-radius: 15px;
+}
+
+.text-block {
+    margin: 5px;
+}
+
+.complement-img {
+    margin: 15px;
+}
+
+.complement-img img {
+    width: 300px;
+}
+
+.flex-row {
+    display: flex;
+}
+
+
+/* Modificação com barra de rolagem */
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: none;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: purple;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #0000EE;  /* creates padding around scroll thumb */
+}
+/* ############################### */
+
+/* animation */
+.animation-piscar {
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+/* ######### */
+
+
+/* #### componenets #### */
+header {
+    color: #0000EE;
+    margin: 100px auto;
+    
+    font-size: 2em;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    color: #7CFC00;
+}
+
+i {
+    color: #0000EE;
+}
+
+.border-color {
+    border: solid #141010;
+}
+
+.small-arrow-down {
+    width: 40px;
+}
+
+.small-arrow-down:hover {
+    width: 45px;
+}
+/* ############################ */
+
+/* Position */
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); /* Adicionar os prefixos dos navegadores */
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 767px) {
+    h1{
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .separete {
+        height: 200px;
+    }
+    
+    .separete-item {
+        margin-top: 120px;
+    }
+
+    header {
+        margin: 50px auto;
+        
+        font-size: 2em;
+    }
+
+    .flex-row {
+        flex-wrap: wrap;
+    }
+
+    .small-container-block {
+        max-width: 100%;
+    }
+
+
+
+}
